@@ -1479,22 +1479,52 @@
                     </view>
                     <navigationItem key="navigationItem" id="byV-5N-vNc"/>
                     <connections>
+                        <outlet property="RestingHeartLbl" destination="LHc-Cw-aD0" id="7sW-kX-pLe"/>
+                        <outlet property="activityCalorieLbl" destination="EPO-e1-RSg" id="g5a-bT-zbC"/>
+                        <outlet property="activityDistanceLbl" destination="g6k-U3-mOE" id="8y7-qX-SXf"/>
+                        <outlet property="activityStepsLbl" destination="sgB-31-8hD" id="Hjc-in-z0P"/>
+                        <outlet property="activityWalkingLbl" destination="6aW-aP-St0" id="xHd-nt-WyA"/>
+                        <outlet property="activitytimeLbl" destination="szz-kw-KmL" id="HgF-7g-893"/>
+                        <outlet property="asleepLbl" destination="Cq3-W9-U6s" id="zix-uG-YoZ"/>
+                        <outlet property="asleepTimeLbl" destination="K2p-Wz-q1G" id="Gqk-VC-GhA"/>
+                        <outlet property="averageHeartLbl" destination="1SR-rb-mrv" id="Ub1-Ye-jPP"/>
+                        <outlet property="averageHeartRateLbl" destination="CHw-Hh-zCz" id="6AZ-GA-WuD"/>
+                        <outlet property="averageHeartView" destination="dcC-cb-Fq9" id="b53-QP-jVq"/>
+                        <outlet property="awakeLbl" destination="JA3-Yv-q0U" id="ETH-Qc-Bt1"/>
+                        <outlet property="awakeTimeLbl" destination="b4y-Am-tHr" id="XTW-GB-gXD"/>
                         <outlet property="caloriBackView" destination="qc2-VA-VA6" id="2p0-lK-5Pu"/>
                         <outlet property="calorieBtn" destination="Vce-cz-RCQ" id="COt-4I-b5V"/>
+                        <outlet property="calorieBurnDetailLbl" destination="LXt-XJ-Fzg" id="flf-Hn-hhv"/>
+                        <outlet property="calorieBurnLbl" destination="yEp-tG-ZbU" id="nHO-rJ-DW9"/>
                         <outlet property="calorieLbl" destination="xEw-4L-2sL" id="hXl-go-u4E"/>
                         <outlet property="chartBackView" destination="MRk-UT-M5Q" id="SIM-sB-QGo"/>
                         <outlet property="chartImage" destination="22f-b4-IHs" id="m7h-JH-dqX"/>
+                        <outlet property="deepLbl" destination="8Xz-pw-tG9" id="UcJ-Aw-59E"/>
+                        <outlet property="deepTimeLbl" destination="lcu-OE-Uhd" id="lFQ-3S-mEO"/>
                         <outlet property="heartBtn" destination="0Es-u9-5VF" id="PtU-jg-ff2"/>
                         <outlet property="heartRateBackView" destination="FYP-nU-6lO" id="T5H-OY-MAQ"/>
                         <outlet property="heartRateLbl" destination="Ttz-Hk-Q6V" id="Nzd-Kx-30c"/>
+                        <outlet property="lightLbl" destination="izI-gr-Mvq" id="czf-8D-9s8"/>
+                        <outlet property="lightTimeLbl" destination="PAH-Hn-pbP" id="ceL-nz-f08"/>
+                        <outlet property="maxHeartLbl" destination="jjG-j5-BHW" id="Ag7-23-zUV"/>
+                        <outlet property="maxHeartRateLbl" destination="lMk-hj-sva" id="BlB-NR-fxX"/>
+                        <outlet property="maxHeartView" destination="S6w-tk-TyI" id="9ct-z7-ApO"/>
+                        <outlet property="minHeartLbl" destination="17l-GF-LG8" id="0WJ-vq-9ZS"/>
+                        <outlet property="minHeartRateLbl" destination="r0A-6J-Agy" id="nQu-PL-gt7"/>
+                        <outlet property="minHeartView" destination="s3e-hn-dOa" id="zv3-l3-Ec2"/>
                         <outlet property="restingHeartBackView" destination="QZf-Vb-rzM" id="EmR-0c-k7A"/>
+                        <outlet property="restingHeartImage" destination="vd7-ur-4iP" id="syg-Dt-bYe"/>
+                        <outlet property="restingHeartRateLbl" destination="Inq-NH-Y0v" id="q4d-Jw-0hf"/>
                         <outlet property="sleepBackView" destination="Ajv-DC-S0g" id="drn-FS-eWn"/>
                         <outlet property="sleepBtn" destination="Ks3-1I-kom" id="h08-th-l9g"/>
                         <outlet property="sleepLbl" destination="1Ok-Ql-I3n" id="kvZ-tJ-Ogq"/>
+                        <outlet property="stepDistanceDetailLbl" destination="alW-NX-TwZ" id="nPn-PM-TGQ"/>
+                        <outlet property="stepDistanceLbl" destination="HUA-rn-nSK" id="qxe-K2-TMa"/>
                         <outlet property="stepsActivityBackView" destination="ZUc-Vs-OgR" id="7qH-8d-raC"/>
                         <outlet property="stepsBtn" destination="ke0-IJ-o5s" id="2JG-dR-XK6"/>
                         <outlet property="stepsDistanceBackView" destination="T4o-We-bf6" id="RpN-SP-yKS"/>
                         <outlet property="stepsLbl" destination="bmB-Eb-1pm" id="CBO-Wz-RpC"/>
+                        <outlet property="todayActivityLbl" destination="gvF-7t-ncE" id="wxM-E2-raA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H6A-pw-9SS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

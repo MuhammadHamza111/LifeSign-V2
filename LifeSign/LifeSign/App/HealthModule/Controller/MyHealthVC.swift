@@ -44,13 +44,43 @@ class MyHealthVC: LifeSignBaseVC{
     @IBOutlet weak var chartBackView: UIView!
     @IBOutlet weak var restingHeartBackView: UIView!
     @IBOutlet weak var heartRateBackView: UIView!
+    @IBOutlet weak var restingHeartImage: UIImageView!
+    @IBOutlet weak var RestingHeartLbl: UILabel!
+    @IBOutlet weak var restingHeartRateLbl: UILabel!
+    @IBOutlet weak var maxHeartView: UIView!
+    @IBOutlet weak var maxHeartRateLbl: UILabel!
+    @IBOutlet weak var maxHeartLbl: UILabel!
+    @IBOutlet weak var minHeartView: UIView!
+    @IBOutlet weak var minHeartRateLbl: UILabel!
+    @IBOutlet weak var minHeartLbl: UILabel!
+    @IBOutlet weak var averageHeartView: UIView!
+    @IBOutlet weak var averageHeartRateLbl: UILabel!
+    @IBOutlet weak var averageHeartLbl: UILabel!
     
     @IBOutlet weak var sleepBackView: UIView!
+    @IBOutlet weak var asleepLbl: UILabel!
+    @IBOutlet weak var asleepTimeLbl: UILabel!
+    @IBOutlet weak var deepLbl: UILabel!
+    @IBOutlet weak var deepTimeLbl: UILabel!
+    @IBOutlet weak var lightLbl: UILabel!
+    @IBOutlet weak var lightTimeLbl: UILabel!
+    @IBOutlet weak var awakeLbl: UILabel!
+    @IBOutlet weak var awakeTimeLbl: UILabel!
     
     @IBOutlet weak var stepsDistanceBackView: UIView!
     @IBOutlet weak var stepsActivityBackView: UIView!
+    @IBOutlet weak var stepDistanceLbl: UILabel!
+    @IBOutlet weak var stepDistanceDetailLbl: UILabel!
+    @IBOutlet weak var todayActivityLbl: UILabel!
+    @IBOutlet weak var activityWalkingLbl: UILabel!
+    @IBOutlet weak var activitytimeLbl: UILabel!
+    @IBOutlet weak var activityStepsLbl: UILabel!
+    @IBOutlet weak var activityDistanceLbl: UILabel!
+    @IBOutlet weak var activityCalorieLbl: UILabel!
     
     @IBOutlet weak var caloriBackView: UIView!
+    @IBOutlet weak var calorieBurnLbl: UILabel!
+    @IBOutlet weak var calorieBurnDetailLbl: UILabel!
     
     @IBOutlet weak var chartImage: UIImageView!
     
