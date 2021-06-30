@@ -30,6 +30,9 @@
                                                 <state key="normal" title="Back" image="ic_back">
                                                     <color key="titleColor" name="appYellowColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="didTapBackBtn:" destination="W5c-A0-6gS" eventType="touchUpInside" id="Coa-L2-9Bn"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -164,6 +167,7 @@
                     <connections>
                         <outlet property="addDeviceBtn" destination="edf-Sp-5Ha" id="vSO-Aa-swE"/>
                         <outlet property="addWatchImage" destination="4pv-sO-9Ud" id="SDJ-WU-ld7"/>
+                        <outlet property="backBtn" destination="IOb-yf-21f" id="qNC-yT-IJP"/>
                         <outlet property="noDeviceDetailLbl" destination="tsD-qh-whA" id="10u-yN-2ye"/>
                         <outlet property="noDeviceLbl" destination="zqC-jf-4zf" id="y4b-Zj-w7R"/>
                     </connections>
