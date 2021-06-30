@@ -792,7 +792,18 @@
                                                                 <subviews>
                                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0PA-kS-y8s" userLabel="ChartView">
                                                                         <rect key="frame" x="8" y="8" width="398" height="324"/>
-                                                                        <color key="backgroundColor" name="appBoxesColor"/>
+                                                                        <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chart_one" translatesAutoresizingMaskIntoConstraints="NO" id="22f-b4-IHs">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="324"/>
+                                                                            </imageView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" name="appBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="bottom" secondItem="22f-b4-IHs" secondAttribute="bottom" id="1ku-Tr-TaY"/>
+                                                                            <constraint firstItem="22f-b4-IHs" firstAttribute="leading" secondItem="0PA-kS-y8s" secondAttribute="leading" id="WVn-EC-ZAw"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="22f-b4-IHs" secondAttribute="trailing" id="bky-HK-2kG"/>
+                                                                            <constraint firstItem="22f-b4-IHs" firstAttribute="top" secondItem="0PA-kS-y8s" secondAttribute="top" id="vJL-jJ-mex"/>
+                                                                        </constraints>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                                 <real key="value" value="10"/>
@@ -1269,7 +1280,75 @@
                                                                     </label>
                                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="71m-bo-AXB" userLabel="ToadyActivityView">
                                                                         <rect key="frame" x="8" y="48.5" width="398" height="106.5"/>
+                                                                        <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_yellow_circle" translatesAutoresizingMaskIntoConstraints="NO" id="wla-fA-BoT">
+                                                                                <rect key="frame" x="15" y="15" width="35" height="35"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="35" id="AzU-jL-Hfz"/>
+                                                                                    <constraint firstAttribute="height" constant="35" id="gDG-yi-jUx"/>
+                                                                                </constraints>
+                                                                            </imageView>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_walking_icon" translatesAutoresizingMaskIntoConstraints="NO" id="mHv-mc-i3H">
+                                                                                <rect key="frame" x="22.5" y="22.5" width="20" height="20"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="20" id="FKM-m9-TaQ"/>
+                                                                                    <constraint firstAttribute="width" constant="20" id="pES-yq-78M"/>
+                                                                                </constraints>
+                                                                            </imageView>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slow walking 10:58 AM - 10:58 AM " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aW-aP-St0">
+                                                                                <rect key="frame" x="65" y="20" width="318" height="20.5"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="rc4-EF-cVa">
+                                                                                <rect key="frame" x="10" y="55.5" width="378" height="20.5"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 min" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szz-kw-KmL">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="20.5"/>
+                                                                                        <color key="backgroundColor" name="appBoxesColor"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="156 Steps" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgB-31-8hD">
+                                                                                        <rect key="frame" x="95" y="0.0" width="93.5" height="20.5"/>
+                                                                                        <color key="backgroundColor" name="appBoxesColor"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.11 Km" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6k-U3-mOE">
+                                                                                        <rect key="frame" x="189.5" y="0.0" width="94" height="20.5"/>
+                                                                                        <color key="backgroundColor" name="appBoxesColor"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Kcal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPO-e1-RSg">
+                                                                                        <rect key="frame" x="284.5" y="0.0" width="93.5" height="20.5"/>
+                                                                                        <color key="backgroundColor" name="appBoxesColor"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </stackView>
+                                                                        </subviews>
                                                                         <color key="backgroundColor" name="appBoxesColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="6aW-aP-St0" firstAttribute="leading" secondItem="wla-fA-BoT" secondAttribute="trailing" constant="15" id="DSK-j7-ShU"/>
+                                                                            <constraint firstItem="rc4-EF-cVa" firstAttribute="top" secondItem="6aW-aP-St0" secondAttribute="bottom" constant="15" id="Eay-us-fNc"/>
+                                                                            <constraint firstItem="mHv-mc-i3H" firstAttribute="centerY" secondItem="wla-fA-BoT" secondAttribute="centerY" id="IFi-5z-p6g"/>
+                                                                            <constraint firstItem="mHv-mc-i3H" firstAttribute="centerX" secondItem="wla-fA-BoT" secondAttribute="centerX" id="S5Z-XI-SqW"/>
+                                                                            <constraint firstItem="wla-fA-BoT" firstAttribute="leading" secondItem="71m-bo-AXB" secondAttribute="leading" constant="15" id="a4F-7c-ySR"/>
+                                                                            <constraint firstItem="wla-fA-BoT" firstAttribute="top" secondItem="71m-bo-AXB" secondAttribute="top" constant="15" id="ePu-UZ-3s8"/>
+                                                                            <constraint firstItem="6aW-aP-St0" firstAttribute="top" secondItem="71m-bo-AXB" secondAttribute="top" constant="20" id="foJ-N4-P9C"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="rc4-EF-cVa" secondAttribute="trailing" constant="10" id="i4o-Ff-7Ew"/>
+                                                                            <constraint firstItem="rc4-EF-cVa" firstAttribute="leading" secondItem="71m-bo-AXB" secondAttribute="leading" constant="10" id="jGd-7O-kCQ"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="6aW-aP-St0" secondAttribute="trailing" constant="15" id="zJG-8t-uVl"/>
+                                                                        </constraints>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                                 <real key="value" value="10"/>
@@ -1404,6 +1483,7 @@
                         <outlet property="calorieBtn" destination="Vce-cz-RCQ" id="COt-4I-b5V"/>
                         <outlet property="calorieLbl" destination="xEw-4L-2sL" id="hXl-go-u4E"/>
                         <outlet property="chartBackView" destination="MRk-UT-M5Q" id="SIM-sB-QGo"/>
+                        <outlet property="chartImage" destination="22f-b4-IHs" id="m7h-JH-dqX"/>
                         <outlet property="heartBtn" destination="0Es-u9-5VF" id="PtU-jg-ff2"/>
                         <outlet property="heartRateBackView" destination="FYP-nU-6lO" id="T5H-OY-MAQ"/>
                         <outlet property="heartRateLbl" destination="Ttz-Hk-Q6V" id="Nzd-Kx-30c"/>
@@ -1423,6 +1503,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Chart_one" width="414" height="504"/>
         <image name="ic_add_friend_icon" width="22" height="20"/>
         <image name="ic_back" width="24" height="24"/>
         <image name="ic_black_heart" width="16" height="14"/>
@@ -1433,6 +1514,7 @@
         <image name="ic_light_yellow_circle" width="16" height="16"/>
         <image name="ic_sleep_icon" width="18" height="20"/>
         <image name="ic_steps_icon" width="24" height="24"/>
+        <image name="ic_walking_icon" width="12" height="17"/>
         <image name="ic_white_circle" width="16" height="16"/>
         <image name="ic_yellow_circle" width="16" height="16"/>
         <image name="ic_yellow_ecllipse" width="32" height="32"/>

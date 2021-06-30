@@ -52,6 +52,7 @@ class MyHealthVC: LifeSignBaseVC{
     
     @IBOutlet weak var caloriBackView: UIView!
     
+    @IBOutlet weak var chartImage: UIImageView!
     
     //MARK:- PROPERTIES -
     
@@ -70,6 +71,7 @@ class MyHealthVC: LifeSignBaseVC{
         stepsDistanceBackView.isHidden = true
         stepsActivityBackView.isHidden = true
         caloriBackView.isHidden = true
+        chartImage.image = R.image.chart_one()
         // Do any additional setup after loading the view.
     }
     
@@ -108,6 +110,8 @@ extension MyHealthVC{
             stepsBtn.isSelected = false
             calorieBtn.isSelected = false
             
+            chartImage.image = R.image.chart_one()
+            
             heartBtn.backgroundColor = R.color.appGreenColor()
             heartRateLbl.textColor = R.color.appGreenColor()
             sleepBtn.backgroundColor = R.color.appYellowColor()
@@ -135,6 +139,8 @@ extension MyHealthVC{
             stepsBtn.isSelected = false
             calorieBtn.isSelected = false
             
+            chartImage.image = R.image.chart_two()
+            
             heartBtn.backgroundColor = R.color.appYellowColor()
             heartRateLbl.textColor = R.color.appYellowColor()
             sleepBtn.backgroundColor = R.color.appGreenColor()
@@ -160,6 +166,8 @@ extension MyHealthVC{
             sleepBtn.isSelected = false
             stepsBtn.isSelected = true
             calorieBtn.isSelected = false
+            
+            chartImage.image = R.image.chart_three()
             
             heartBtn.backgroundColor = R.color.appYellowColor()
             heartRateLbl.textColor = R.color.appYellowColor()
@@ -187,6 +195,8 @@ extension MyHealthVC{
             sleepBtn.isSelected = false
             stepsBtn.isSelected = false
             calorieBtn.isSelected = true
+            
+            chartImage.image = R.image.chart_four()
             
             heartBtn.backgroundColor = R.color.appYellowColor()
             heartRateLbl.textColor = R.color.appYellowColor()
