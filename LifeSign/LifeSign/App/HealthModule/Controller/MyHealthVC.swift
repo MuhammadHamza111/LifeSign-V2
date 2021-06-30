@@ -41,6 +41,16 @@ class MyHealthVC: LifeSignBaseVC{
     }
     @IBOutlet weak var calorieLbl: UILabel!
     
+    @IBOutlet weak var chartBackView: UIView!
+    @IBOutlet weak var restingHeartBackView: UIView!
+    @IBOutlet weak var heartRateBackView: UIView!
+    
+    @IBOutlet weak var sleepBackView: UIView!
+    
+    @IBOutlet weak var stepsDistanceBackView: UIView!
+    @IBOutlet weak var stepsActivityBackView: UIView!
+    
+    @IBOutlet weak var caloriBackView: UIView!
     
     
     //MARK:- PROPERTIES -
@@ -53,6 +63,13 @@ class MyHealthVC: LifeSignBaseVC{
         setText()
         observers()
         heartBtn.isSelected = true
+        chartBackView.isHidden = false
+        restingHeartBackView.isHidden = false
+        heartRateBackView.isHidden = false
+        sleepBackView.isHidden = true
+        stepsDistanceBackView.isHidden = true
+        stepsActivityBackView.isHidden = true
+        caloriBackView.isHidden = true
         // Do any additional setup after loading the view.
     }
     
@@ -72,36 +89,124 @@ class MyHealthVC: LifeSignBaseVC{
     
     //MARK:- ACTIONS -
     
+    
+    
     @IBAction func didTapHealthBtn(_ sender: UIButton) {
-        if sender.tag == 0{
+        settingUpHealthBtn(sender.tag)
+    }
+    
+    
+}
+
+extension MyHealthVC{
+    
+    fileprivate func settingUpHealthBtn(_ tag:Int) {
+        if tag == 0{
             // Heart Btn Selected..
             heartBtn.isSelected = true
             sleepBtn.isSelected = false
             stepsBtn.isSelected = false
             calorieBtn.isSelected = false
+            
+            heartBtn.backgroundColor = R.color.appGreenColor()
+            heartRateLbl.textColor = R.color.appGreenColor()
+            sleepBtn.backgroundColor = R.color.appYellowColor()
+            sleepLbl.textColor = R.color.appYellowColor()
+            stepsBtn.backgroundColor = R.color.appYellowColor()
+            stepsLbl.textColor = R.color.appYellowColor()
+            calorieBtn.backgroundColor = R.color.appYellowColor()
+            calorieLbl.textColor = R.color.appYellowColor()
+            
             print("Did Tap Heart Btn")
             
-        }else if sender.tag == 1{
+            chartBackView.isHidden = false
+            restingHeartBackView.isHidden = false
+            heartRateBackView.isHidden = false
+            sleepBackView.isHidden = true
+            stepsDistanceBackView.isHidden = true
+            stepsActivityBackView.isHidden = true
+            caloriBackView.isHidden = true
+            
+            
+        }else if tag == 1{
             // Sleep Btn Selected..
             heartBtn.isSelected = false
             sleepBtn.isSelected = true
             stepsBtn.isSelected = false
             calorieBtn.isSelected = false
+            
+            heartBtn.backgroundColor = R.color.appYellowColor()
+            heartRateLbl.textColor = R.color.appYellowColor()
+            sleepBtn.backgroundColor = R.color.appGreenColor()
+            sleepLbl.textColor = R.color.appGreenColor()
+            stepsBtn.backgroundColor = R.color.appYellowColor()
+            stepsLbl.textColor = R.color.appYellowColor()
+            calorieBtn.backgroundColor = R.color.appYellowColor()
+            calorieLbl.textColor = R.color.appYellowColor()
+            
             print("Did Tap Sleep Btn")
-        }else if sender.tag == 2{
+            chartBackView.isHidden = false
+            restingHeartBackView.isHidden = true
+            heartRateBackView.isHidden = true
+            sleepBackView.isHidden = false
+            stepsDistanceBackView.isHidden = true
+            stepsActivityBackView.isHidden = true
+            caloriBackView.isHidden = true
+            
+            
+        }else if tag == 2{
             // Steps Btn Selected..
             heartBtn.isSelected = false
             sleepBtn.isSelected = false
             stepsBtn.isSelected = true
             calorieBtn.isSelected = false
+            
+            heartBtn.backgroundColor = R.color.appYellowColor()
+            heartRateLbl.textColor = R.color.appYellowColor()
+            sleepBtn.backgroundColor = R.color.appYellowColor()
+            sleepLbl.textColor = R.color.appYellowColor()
+            stepsBtn.backgroundColor = R.color.appGreenColor()
+            stepsLbl.textColor = R.color.appGreenColor()
+            calorieBtn.backgroundColor = R.color.appYellowColor()
+            calorieLbl.textColor = R.color.appYellowColor()
+            
             print("Did Tap Steps Btn")
+            chartBackView.isHidden = false
+            restingHeartBackView.isHidden = true
+            heartRateBackView.isHidden = true
+            sleepBackView.isHidden = true
+            stepsDistanceBackView.isHidden = false
+            stepsActivityBackView.isHidden = false
+            caloriBackView.isHidden = true
+            
+            
+            
         }else{
             // Calories Btn Selected..
             heartBtn.isSelected = false
             sleepBtn.isSelected = false
             stepsBtn.isSelected = false
             calorieBtn.isSelected = true
+            
+            heartBtn.backgroundColor = R.color.appYellowColor()
+            heartRateLbl.textColor = R.color.appYellowColor()
+            sleepBtn.backgroundColor = R.color.appYellowColor()
+            sleepLbl.textColor = R.color.appYellowColor()
+            stepsBtn.backgroundColor = R.color.appYellowColor()
+            stepsLbl.textColor = R.color.appYellowColor()
+            calorieBtn.backgroundColor = R.color.appGreenColor()
+            calorieLbl.textColor = R.color.appGreenColor()
+            
             print("Did Tap Caloies Btn")
+            chartBackView.isHidden = false
+            restingHeartBackView.isHidden = true
+            heartRateBackView.isHidden = true
+            sleepBackView.isHidden = true
+            stepsDistanceBackView.isHidden = true
+            stepsActivityBackView.isHidden = true
+            caloriBackView.isHidden = false
+            
+            
         }
     }
     
